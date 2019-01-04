@@ -1,0 +1,29 @@
+{
+  "name": "console-firehose",
+  "version": "1.0.0",
+  "description": "Node.js Amazon Kinesis 整合方案",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiedey/console-firehose.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Amazon",
+    "Kinesis",
+    "Firehose",
+    "Bigdata"
+  ],
+  "author": "Mason <wengqidi@wps.cn>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chiedey/console-firehose/issues"
+  },
+  "homepage": "https://github.com/chiedey/console-firehose#readme",
+  "dependencies": {
+    "aws-sdk": "^2.383.0"
+  }
+}
