@@ -2,7 +2,7 @@
  * Dependencies: aws-sdk
  * Quick start:
  *   require('console-firehose')({
- *     region: 'us-west-2',
+ *     awsRegion: 'us-west-2',
  *     awsAccessKeyId: '<你的AWS ID>',
  *     awsSecretAccessKey: '<你的AWS Key>',
  *     deliveryStreamName: '<你在Amazon Kinesis创建的Firehose delivery stream名称>'
@@ -22,7 +22,7 @@
 
 // 初始化参数检查
 const check = argo => {
-  if (!argo.region) {
+  if (!argo.awsRegion) {
     console.log('请指定AWS可用区')
     return
   }
@@ -47,7 +47,11 @@ module.exports = (argo = {}) => {
   // 引入aws-sdk依赖
   const aws = require('aws-sdk')
   // 实例化Firehose
-  const firehose = new aws.Firehose({ region: argo.region })
+  const firehose = new aws.Firehose({
+    region:          argo.awsRegion,
+    accessKeyId:     argo.awsAccessKeyId,
+    secretAccessKey: argo.awsSecretAccessKey
+  })
 
   // 往console注入fh
   console.__proto__.fh = meta => {

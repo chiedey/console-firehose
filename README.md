@@ -6,7 +6,7 @@
 ## Quick start:
 ```javascript
 require('console-firehose')({
-  region: 'us-west-2',
+  awsRegion: 'us-west-2',
   awsAccessKeyId: '<你的AWS ID>',
   awsSecretAccessKey: '<你的AWS Key>',
   deliveryStreamName: '<你在Amazon Kinesis创建的Firehose delivery stream名称>'
