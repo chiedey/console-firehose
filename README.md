@@ -1,5 +1,8 @@
 # Console Firehose
 
+## 工作原理示意
+![](https://raw.githubusercontent.com/chiedey/console-firehose/master/hue.jpg)
+
 ## Quick start:
 ```javascript
 require('console-firehose')({

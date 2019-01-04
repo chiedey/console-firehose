@@ -1,6 +1,6 @@
 {
   "name": "console-firehose",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js Amazon Kinesis 整合方案",
   "main": "index.js",
   "scripts": {
