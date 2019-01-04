@@ -12,7 +12,7 @@ require('console-firehose')({
 console.fh('2019-01-04	2249153971769560	1	0	1029	1')
 ```
 
-PS:
+## PS
 0. 引用此库后，请用console.fh('xxx yyy zzz aaa bbb ccc iii jjj kkk')上报数据
 1. 上报数据内容为字符串
 2. 各个字段推荐使用tab分隔符进行分割
